@@ -3,7 +3,11 @@
   <link rel="text/css" href="link.php">
 </head>
 <body>
-  <a href="link.php">
-    <div class="button">tes</a</div>
-  </a>
+    <div id="button">tes</div>
 </body>
+<script>
+  var btn = document.getElementById('button');
+  btn.addEventListener('click', function() {
+    document.location.href = '<?php echo $page; ?>';
+  });
+</script>
